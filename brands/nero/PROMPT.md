@@ -37,6 +37,30 @@ meta.md      שורת הנושא (subject) + A/B variants + תיאור קצר ל
 <preview text — also slotted into {{PREHEADER}} in the HTML>
 ```
 
+### Writing good meta (subject + preheader)
+The subject + preheader decide opens. Craft them, don't fill them.
+
+**Subject** (the hook before `| פרסומת`):
+- Short: ~6-9 words. Front-load the value/curiosity.
+- One hook only: offer OR curiosity OR urgency. Not all three.
+- NERO voice: quiet confidence, not hype-shouting. Tease, don't beg.
+- Emoji optional, max one, only if it fits the vibe.
+- Tie to the email's real goal/content (pull from the brief).
+
+**A/B variants**: each tests a *different* hook (e.g. offer vs curiosity vs urgency), not reworded twins.
+
+**Preheader** (inbox preview line):
+- Extends the subject, never repeats it. It is the free second line.
+- Add the second hook: proof, deadline, detail, or what's inside.
+- ~1 short line. First ~40 chars matter most (mobile truncates).
+
+Example pairing:
+```
+subject:   הקיץ כאן, הסטייל שלך מוכן 😎 | פרסומת
+preheader: 15% על כל הצמידים, קוד SUN15, עד יום ראשון
+```
+(subject = curiosity/identity · preheader = the concrete offer + deadline)
+
 ### LEGAL — mandatory (Israeli anti-spam, תיקון 40)
 - **Every** subject line + every A/B variant MUST end with ` | פרסומת`. No exceptions.
 - Example: `50% הנחה לא יישארו לנצח 😎 | פרסומת`
