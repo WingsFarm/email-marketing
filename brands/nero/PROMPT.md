@@ -15,9 +15,31 @@ notes:    anything else (tone tweak, deadline, audience)
 Anything missing → I ask or use a sensible brand default.
 
 ## What I produce
-- Full HTML, ready to paste into Flashy custom-code block.
+For each email, a folder: `emails/YYYY-MM-DD-slug/`
+```
+email.html   full HTML, ready to paste into Flashy custom-code block
+meta.md      שורת הנושא (subject) + A/B variants + תיאור קצר לפתיחה (preheader)
+```
 - Hebrew copy (RTL) in NERO voice — see [brand-voice.md](brand-voice.md).
 - Header (greige bar + logo) baked in. **No footer** — Flashy adds it.
+- I also paste the HTML + subject + preheader in chat for quick grab.
+
+### meta.md format
+```markdown
+# שורת הנושא
+<primary subject> | פרסומת
+
+## גרסאות נוספות
+- <variant A> | פרסומת
+- <variant B> | פרסומת
+
+# תיאור קצר לפתיחה (preheader)
+<preview text — also slotted into {{PREHEADER}} in the HTML>
+```
+
+### LEGAL — mandatory (Israeli anti-spam, תיקון 40)
+- **Every** subject line + every A/B variant MUST end with ` | פרסומת`. No exceptions.
+- Example: `50% הנחה לא יישארו לנצח 😎 | פרסומת`
 
 ## Templates
 | type | structure |
@@ -34,6 +56,7 @@ Anything missing → I ask or use a sensible brand default.
 - Hebrew primary; English only as punchy accent.
 - Reassure on durability + warranty, concretely.
 - Headlines UPPERCASE, letter-spaced.
+- **No em/en-dash** (— –) anywhere in copy or meta. Use a normal hyphen `-`, and use even that sparingly. Rephrase instead of dashing.
 
 ## Token reference (what gets filled)
 `{{PREHEADER}}` inbox preview line ·
