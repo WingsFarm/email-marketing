@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="x-apple-disable-message-reformatting">
+  <title>NERO</title>
+  <!--[if mso]>
+  <noscript><xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml></noscript>
+  <![endif]-->
+  <style>
+    /* client resets */
+    body,table,td,a{ -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; }
+    table,td{ mso-table-lspace:0pt; mso-table-rspace:0pt; }
+    img{ -ms-interpolation-mode:bicubic; border:0; height:auto; line-height:100%; outline:none; text-decoration:none; }
+    body{ margin:0; padding:0; width:100%!important; height:100%!important; }
+    /* mobile */
+    @media screen and (max-width:600px){
+      .container{ width:100%!important; }
+      .stack{ display:block!important; width:100%!important; }
+      .px{ padding-left:20px!important; padding-right:20px!important; }
+    }
+  </style>
+</head>
+<!--
+  NERO base email template
+  - 600px, RTL (Hebrew), table-based, inline-CSS, Outlook/Gmail safe
+  - NO footer: Flashy appends its own footer block
+  - Replace {{TOKENS}} per send. Content goes in the CONTENT SLOT.
+  Brand tokens:
+    black   #0A0A0A   greige(header) #D9D3C7   white #FFFFFF
+    gold    #C9A24B   gray  #8A8A8A
+-->
+<body style="margin:0; padding:0; background-color:#F4F4F2;">
+  <!-- preheader (hidden inbox preview text) -->
+  <div style="display:none; max-height:0; overflow:hidden; opacity:0; mso-hide:all;">{{PREHEADER}}</div>
+
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#F4F4F2;">
+    <tr>
+      <td align="center" style="padding:0;">
+
+        <table role="presentation" class="container" width="600" cellpadding="0" cellspacing="0" style="width:600px; max-width:600px; background-color:#FFFFFF;">
+
+          <!-- ===== HEADER (greige bar + centered logo) ===== -->
+          <tr>
+            <td align="center" bgcolor="#D9D3C7" style="background-color:#D9D3C7; padding:22px 0;">
+              <img src="https://uploads.nadavezra.com/email/7a78de3c-b5b8-4933-8e54-e9268c58b75e.png" width="140" alt="NERO" style="display:block; width:140px; max-width:140px; height:auto;">
+            </td>
+          </tr>
+
+          <!-- ===== CONTENT SLOT — paste components here ===== -->
+          {{CONTENT}}
+          <!-- ===== /CONTENT SLOT ===== -->
+
+        </table>
+
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

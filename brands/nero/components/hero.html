@@ -1,0 +1,29 @@
+<!-- HERO: full-width image + headline + subcopy + CTA. RTL. -->
+<tr>
+  <td style="padding:0;">
+    <img src="{{HERO_IMG}}" width="600" alt="{{HERO_ALT}}" style="display:block; width:100%; max-width:600px; height:auto;">
+  </td>
+</tr>
+<tr>
+  <td class="px" align="center" style="padding:32px 40px 8px 40px;">
+    <h1 style="margin:0; font-family:Arial,Helvetica,sans-serif; font-size:28px; line-height:1.25; letter-spacing:2px; color:#0A0A0A; text-transform:uppercase; font-weight:bold;">{{HEADLINE}}</h1>
+  </td>
+</tr>
+<tr>
+  <td class="px" align="center" style="padding:0 40px 24px 40px;">
+    <p style="margin:0; font-family:Arial,Helvetica,sans-serif; font-size:16px; line-height:1.6; color:#5A5A5A;">{{SUBCOPY}}</p>
+  </td>
+</tr>
+<!-- CTA button (bulletproof, Outlook VML) -->
+<tr>
+  <td align="center" style="padding:0 40px 36px 40px;">
+    <!--[if mso]>
+    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="{{CTA_URL}}" style="height:48px;v-text-anchor:middle;width:240px;" arcsize="0%" strokecolor="#0A0A0A" fillcolor="#0A0A0A">
+      <w:anchorlock/><center style="color:#FFFFFF;font-family:Arial,sans-serif;font-size:15px;letter-spacing:1px;">{{CTA_TEXT}}</center>
+    </v:roundrect>
+    <![endif]-->
+    <!--[if !mso]><!-->
+    <a href="{{CTA_URL}}" style="display:inline-block; background-color:#0A0A0A; color:#FFFFFF; font-family:Arial,Helvetica,sans-serif; font-size:15px; letter-spacing:1px; text-transform:uppercase; text-decoration:none; padding:15px 40px; mso-padding-alt:0;">{{CTA_TEXT}}</a>
+    <!--<![endif]-->
+  </td>
+</tr>
